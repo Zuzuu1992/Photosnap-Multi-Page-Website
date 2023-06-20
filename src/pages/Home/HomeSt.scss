@@ -1,0 +1,245 @@
+.introduction {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  .bridge-man {
+    width: 100%;
+  }
+
+  .create-box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    background-color: #000000;
+    padding: 72px 33px;
+    position: relative;
+  }
+
+  .stick {
+    background: linear-gradient(
+      26.57deg,
+      #ffc593 0%,
+      #bc7198 43.29%,
+      #5a77ff 83.33%
+    );
+    width: 37%;
+    height: 6px;
+    position: absolute;
+    top: 0;
+    left: 8%;
+  }
+
+  .title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 3.33333px;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  .text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+  }
+
+  .link-box {
+    display: flex;
+    align-items: center;
+    column-gap: 18px;
+    padding-top: 7px;
+  }
+
+  .direction {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+      text-decoration-line: underline;
+    }
+  }
+  .notebook {
+    width: 100%;
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  .mount-photo-box {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.0001) 0.27%,
+        rgba(0, 0, 0, 0.661222) 100%
+      ),
+      url(/assets/stories/mobile/mountains.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 236px 33px 40px 33px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  .image-name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #ffffff;
+    padding-bottom: 4px;
+  }
+  .author-name {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    color: #ffffff;
+    padding-bottom: 16px;
+  }
+  .line-1 {
+    height: 1px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.251);
+  }
+  .direction-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+  }
+  .direction-1 {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  .cityscapes-photo-box {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.0001) 0.27%,
+        rgba(0, 0, 0, 0.661222) 100%
+      ),
+      url(/assets/home/mobile/skyscrapers.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 236px 33px 40px 33px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  .voyage-photo-box {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.0001) 0.27%,
+        rgba(0, 0, 0, 0.661222) 100%
+      ),
+      url(/assets/home/mobile/walk.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 236px 33px 40px 33px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  .architecture-photo-box {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.0001) 0.27%,
+        rgba(0, 0, 0, 0.661222) 100%
+      ),
+      url(/assets/home/mobile/architecture.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 236px 33px 40px 33px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+
+.highlights {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-bottom: 80px;
+  .highlight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    padding-left: 33px;
+    padding-right: 33px;
+  }
+  .responsive-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #000000;
+    padding-top: 48px;
+  }
+  .responsive-text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+    padding-top: 16px;
+  }
+}

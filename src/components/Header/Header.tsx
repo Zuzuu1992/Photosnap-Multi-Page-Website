@@ -1,15 +1,17 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import "./HeaderSt.scss";
 import Logo from "/assets/shared/desktop/logo.svg";
 import Hamburger from "/assets/shared/mobile/menu.svg";
 import Cross from "/assets/shared/mobile/close.svg";
 
-export const Header = () => {
-  const [active, setActive] = useState(false);
-  const handleActive = () => {
-    setActive(!active);
-  };
+interface HeaderProps {
+  active: boolean;
+  handleActive: () => void;
+}
+
+export const Header: React.FC<HeaderProps> = ({ active, handleActive }) => {
   return (
     <div className="header">
       <img src={Logo} alt="Logo" />
@@ -21,13 +23,21 @@ export const Header = () => {
         )}
       </div>
       {active && (
-        <div className="menu-overlay">
-          <h2>Stories</h2>
-          <h2>Features</h2>
-          <h2>Pricing</h2>
-          <div className="line"></div>
-          <button>Get an invite</button>
-        </div>
+        <>
+          <div className="menu-overlay">
+            <Link to="/stories" className="link">
+              Stories
+            </Link>
+            <Link to="/features" className="link">
+              Features
+            </Link>
+            <Link to="/pricing" className="link">
+              Pricing
+            </Link>
+            <div className="line"></div>
+            <button>Get an invite</button>
+          </div>
+        </>
       )}
     </div>
   );

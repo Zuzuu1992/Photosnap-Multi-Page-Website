@@ -1,0 +1,15 @@
+.wrap {
+  display: flex;
+  align-items: center;
+  column-gap: 13.33px;
+  padding-top: 32px;
+
+  .facebook,
+  .youtube,
+  .twitter,
+  .pinterest,
+  .instagram {
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+}

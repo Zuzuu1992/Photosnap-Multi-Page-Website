@@ -5,10 +5,12 @@
   background-color: #ffffff;
   padding: 28px 24px;
   position: relative;
+  z-index: 3;
 
   .hamburger-box {
     display: flex;
     align-items: center;
+    cursor: pointer;
   }
 
   .menu-overlay {
@@ -25,13 +27,19 @@
     row-gap: 20px;
   }
 
-  h2 {
+  .link {
     font-weight: 700;
     font-size: 15px;
     line-height: 20px;
     letter-spacing: 2.5px;
     text-transform: uppercase;
     color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+      color: rgba(0, 0, 0, 0.307);
+    }
   }
 
   .line {
@@ -51,5 +59,11 @@
     line-height: 20px;
     letter-spacing: 2.5px;
     text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+      background-color: #dfdfdf;
+      color: #000000;
+    }
   }
 }
