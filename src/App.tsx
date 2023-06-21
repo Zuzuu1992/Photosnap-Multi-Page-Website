@@ -24,7 +24,10 @@ function App() {
           path="/features"
           element={<Features active={active} handleActive={handleActive} />}
         />
-        <Route path="/pricing" element={<Pricing />} />
+        <Route
+          path="/pricing"
+          element={<Pricing active={active} handleActive={handleActive} />}
+        />
       </Routes>
     </Router>
   );
