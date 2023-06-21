@@ -87,13 +87,7 @@
   display: grid;
   grid-template-columns: 1fr;
 
-  .mount-photo-box {
-    background-image: linear-gradient(
-        180deg,
-        rgba(0, 0, 0, 0.0001) 0.27%,
-        rgba(0, 0, 0, 0.661222) 100%
-      ),
-      url(/assets/stories/mobile/mountains.jpg);
+  .box {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -108,6 +102,15 @@
         transform: scale(1.05);
       }
     }
+  }
+
+  .mount-photo {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.0001) 0.27%,
+        rgba(0, 0, 0, 0.661222) 100%
+      ),
+      url(/assets/stories/mobile/mountains.jpg);
   }
 
   .image-name {
@@ -144,48 +147,22 @@
     cursor: pointer;
   }
 
-  .cityscapes-photo-box {
+  .cityscapes-photo {
     background-image: linear-gradient(
         180deg,
         rgba(0, 0, 0, 0.0001) 0.27%,
         rgba(0, 0, 0, 0.661222) 100%
       ),
       url(/assets/home/mobile/skyscrapers.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    padding: 236px 33px 40px 33px;
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    transition: all 0.3s;
-    &:hover {
-      &:hover {
-        transform: scale(1.05);
-      }
-    }
   }
 
-  .voyage-photo-box {
+  .voyage-photo {
     background-image: linear-gradient(
         180deg,
         rgba(0, 0, 0, 0.0001) 0.27%,
         rgba(0, 0, 0, 0.661222) 100%
       ),
       url(/assets/home/mobile/walk.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    padding: 236px 33px 40px 33px;
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    transition: all 0.3s;
-    &:hover {
-      &:hover {
-        transform: scale(1.05);
-      }
-    }
   }
 
   .architecture-photo-box {
@@ -195,19 +172,6 @@
         rgba(0, 0, 0, 0.661222) 100%
       ),
       url(/assets/home/mobile/architecture.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    padding: 236px 33px 40px 33px;
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    transition: all 0.3s;
-    &:hover {
-      &:hover {
-        transform: scale(1.05);
-      }
-    }
   }
 }
 

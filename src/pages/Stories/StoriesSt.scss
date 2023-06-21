@@ -1,1 +1,294 @@
-ra
+.intro {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  .hero-img-box {
+    display: flex;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .create-box {
+    display: flex;
+    flex-direction: column;
+    // row-gap: 16px;
+    background-color: #000000;
+    padding: 72px 33px;
+  }
+
+  .featured-story {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+
+  .author {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    color: #ffffff;
+
+    span {
+      color: rgba(255, 255, 255, 0.753);
+    }
+  }
+
+  .title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 3.33333px;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .link-box {
+    display: flex;
+    align-items: center;
+    column-gap: 18px;
+    padding-top: 7px;
+  }
+
+  .direction {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+      text-decoration-line: underline;
+    }
+  }
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  .box {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    padding: 236px 33px 40px 33px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  .date {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    color: #ffffff;
+    padding-bottom: 4px;
+  }
+
+  .image-name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #ffffff;
+    padding-bottom: 4px;
+  }
+  .author-name {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    color: #ffffff;
+    padding-bottom: 16px;
+  }
+  .line-1 {
+    height: 1px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.251);
+  }
+  .direction-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+  }
+  .direction-1 {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  .mount-photo {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.0001) 0.27%,
+        rgba(0, 0, 0, 0.661222) 100%
+      ),
+      url(/assets/stories/mobile/mountains.jpg);
+  }
+
+  .cityscapes-photo {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.0001) 0.27%,
+        rgba(0, 0, 0, 0.661222) 100%
+      ),
+      url(/assets/stories/mobile/cityscapes.jpg);
+  }
+
+  .voyage-photo {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.0001) 0.27%,
+        rgba(0, 0, 0, 0.661222) 100%
+      ),
+      url(/assets/stories/mobile/18-days-voyage.jpg);
+  }
+
+  .architecture-photo {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.0001) 0.27%,
+        rgba(0, 0, 0, 0.661222) 100%
+      ),
+      url(/assets/stories/mobile/architecturals.jpg);
+  }
+
+  .lake-photo {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.0001) 0.27%,
+        rgba(0, 0, 0, 0.661222) 100%
+      ),
+      url(/assets/stories/mobile/world-tour.jpg);
+  }
+
+  .tree-photo {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.0001) 0.27%,
+        rgba(0, 0, 0, 0.661222) 100%
+      ),
+      url(/assets/stories/mobile/unforeseen-corners.jpg);
+  }
+
+  .lion-photo {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.0001) 0.27%,
+        rgba(0, 0, 0, 0.661222) 100%
+      ),
+      url(/assets/stories/mobile/king-on-africa.jpg);
+  }
+
+  .nowhere-photo {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.0001) 0.27%,
+        rgba(0, 0, 0, 0.661222) 100%
+      ),
+      url(/assets/stories/mobile/trip-to-nowhere.jpg);
+  }
+
+  .sea-photo {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.0001) 0.27%,
+        rgba(0, 0, 0, 0.661222) 100%
+      ),
+      url(/assets/stories/mobile/rage-of-the-sea.jpg);
+  }
+  .horse-photo {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.0001) 0.27%,
+        rgba(0, 0, 0, 0.661222) 100%
+      ),
+      url(/assets/stories/mobile/running-free.jpg);
+  }
+  .waves-photo {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.0001) 0.27%,
+        rgba(0, 0, 0, 0.661222) 100%
+      ),
+      url(/assets/stories/mobile/behind-the-waves.jpg);
+  }
+  .cliff-photo {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.0001) 0.27%,
+        rgba(0, 0, 0, 0.661222) 100%
+      ),
+      url(/assets/stories/mobile/calm-waters.jpg);
+  }
+  .galaxy-photo {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.0001) 0.27%,
+        rgba(0, 0, 0, 0.661222) 100%
+      ),
+      url(/assets/stories/mobile/milky-way.jpg);
+  }
+  .forrest-photo {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.0001) 0.27%,
+        rgba(0, 0, 0, 0.661222) 100%
+      ),
+      url(/assets/stories/mobile/dark-forest.jpg);
+  }
+  .flower-photo {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.0001) 0.27%,
+        rgba(0, 0, 0, 0.661222) 100%
+      ),
+      url(/assets/stories/mobile/somwarpet.jpg);
+  }
+  .tower-photo {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.0001) 0.27%,
+        rgba(0, 0, 0, 0.661222) 100%
+      ),
+      url(/assets/stories/mobile/land-of-dreams.jpg);
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}

@@ -11,7 +11,7 @@ interface HeaderProps {
   handleActive: () => void;
 }
 
-export const Header: React.FC<HeaderProps> = ({ active, handleActive }) => {
+export const Header = ({ active, handleActive }: HeaderProps) => {
   return (
     <div className="header">
       <img src={Logo} alt="Logo" />

@@ -9,11 +9,12 @@ import Limit from "/assets/features/desktop/no-limit.svg";
 import Embed from "/assets/features/desktop/embed.svg";
 import "./HomeSt.scss";
 
-export const Home = () => {
-  const [active, setActive] = useState<boolean>(false);
-  const handleActive = () => {
-    setActive(!active);
-  };
+interface HeaderProps {
+  active: boolean;
+  handleActive: () => void;
+}
+
+export const Home = ({ active, handleActive }: HeaderProps) => {
   return (
     <>
       {active && (
@@ -91,7 +92,7 @@ export const Home = () => {
         </div>
       </section>
       <section className="gallery">
-        <div className="mount-photo-box">
+        <div className="mount-photo box">
           <h1 className="image-name">The mountains</h1>
           <p className="author-name">by John Appleseed</p>
           <div className="line-1"></div>
@@ -104,7 +105,7 @@ export const Home = () => {
             </svg>
           </div>
         </div>
-        <div className="cityscapes-photo-box">
+        <div className="cityscapes-photo box">
           <h1 className="image-name">Sunset Cityscapes</h1>
           <p className="author-name">by Benjamin Cruz</p>
           <div className="line-1"></div>
@@ -117,7 +118,7 @@ export const Home = () => {
             </svg>
           </div>
         </div>
-        <div className="voyage-photo-box">
+        <div className="voyage-photo box">
           <h1 className="image-name">18 Days Voyage</h1>
           <p className="author-name">by Alexei Borodin</p>
           <div className="line-1"></div>
@@ -130,7 +131,7 @@ export const Home = () => {
             </svg>
           </div>
         </div>
-        <div className="architecture-photo-box">
+        <div className="architecture-photo box">
           <h1 className="image-name">Architecturals</h1>
           <p className="author-name">by Samantha Brooke</p>
           <div className="line-1"></div>
