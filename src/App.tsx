@@ -20,7 +20,10 @@ function App() {
           path="/stories"
           element={<Stories active={active} handleActive={handleActive} />}
         />
-        <Route path="/features" element={<Features />} />
+        <Route
+          path="/features"
+          element={<Features active={active} handleActive={handleActive} />}
+        />
         <Route path="/pricing" element={<Pricing />} />
       </Routes>
     </Router>

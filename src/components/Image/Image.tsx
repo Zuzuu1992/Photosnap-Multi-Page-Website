@@ -1,5 +1,4 @@
 import React from "react";
-import "./ImageSt.scss";
 
 export const Image = ({ day, title, author }: any) => {
   return (

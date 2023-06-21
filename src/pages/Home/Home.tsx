@@ -8,6 +8,7 @@ import Screens from "/assets/features/desktop/responsive.svg";
 import Limit from "/assets/features/desktop/no-limit.svg";
 import Embed from "/assets/features/desktop/embed.svg";
 import "./HomeSt.scss";
+import { Feature } from "../../components/Feature/Feature";
 
 interface HeaderProps {
   active: boolean;
@@ -146,30 +147,27 @@ export const Home = ({ active, handleActive }: HeaderProps) => {
         </div>
       </section>
       <section className="highlights">
-        <div className="responsive-box highlight">
-          <img src={Screens} />
-          <h2 className="responsive-title">100% Responsive</h2>
-          <p className="responsive-text">
-            No matter which the device you’re on, our site is fully responsive
-            and stories look beautiful on any screen.
-          </p>
-        </div>
-        <div className="no-limit-box highlight">
-          <img src={Limit} />
-          <h2 className="responsive-title">No Photo Upload Limit</h2>
-          <p className="responsive-text">
-            Our tool has no limits on uploads or bandwidth. Freely upload in
-            bulk and share all of your stories in one go.
-          </p>
-        </div>
-        <div className="embed-box highlight">
-          <img src={Embed} />
-          <h2 className="responsive-title"> Available to Embed</h2>
-          <p className="responsive-text">
-            Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube
-            videos, Google Maps, and more.
-          </p>
-        </div>
+        <Feature
+          icon={Screens}
+          title={"100% Responsive"}
+          paragraph={
+            "No matter which the device you’re on, our site is fully responsive and stories look beautiful on any screen."
+          }
+        />
+        <Feature
+          icon={Limit}
+          title={"No Photo Upload Limit"}
+          paragraph={
+            "Our tool has no limits on uploads or bandwidth. Freely upload in bulk and share all of your stories in one go."
+          }
+        />
+        <Feature
+          icon={Embed}
+          title={" Available to Embed"}
+          paragraph={
+            "Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, Google Maps, and more."
+          }
+        />
       </section>
       <Footer />
     </>

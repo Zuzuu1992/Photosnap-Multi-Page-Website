@@ -1,0 +1,120 @@
+.intro {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  .hero-img-box img {
+    width: 100%;
+  }
+
+  .create-box_1 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    background-color: #000000;
+    padding: 72px 33px;
+    position: relative;
+  }
+
+  .stick {
+    background: linear-gradient(
+      26.57deg,
+      #ffc593 0%,
+      #bc7198 43.29%,
+      #5a77ff 83.33%
+    );
+    width: 37%;
+    height: 6px;
+    position: absolute;
+    top: 0;
+    left: 8%;
+  }
+
+  .title_1 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 3.33333px;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  .text_1 {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.beta {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.0001) 0.27%,
+      rgba(0, 0, 0, 0.661222) 100%
+    ),
+    url(/assets/shared/mobile/bg-beta.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  padding: 64px 33px 64px 33px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  position: relative;
+
+  .beta-name {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 3.33333px;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  .link-box {
+    display: flex;
+    align-items: center;
+    column-gap: 18px;
+    padding-top: 7px;
+  }
+
+  .direction {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+      text-decoration-line: underline;
+    }
+  }
+  .stick {
+    background: linear-gradient(
+      26.57deg,
+      #ffc593 0%,
+      #bc7198 43.29%,
+      #5a77ff 83.33%
+    );
+    width: 37%;
+    height: 6px;
+    position: absolute;
+    top: 0;
+    left: 8%;
+  }
+}
