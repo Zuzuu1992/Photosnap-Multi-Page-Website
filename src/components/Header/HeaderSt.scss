@@ -7,10 +7,19 @@
   position: relative;
   z-index: 3;
 
+  .logo-mobile {
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+
   .hamburger-box {
     display: flex;
     align-items: center;
     cursor: pointer;
+    @media (min-width: 768px) {
+      display: none;
+    }
   }
 
   .menu-overlay {
@@ -27,6 +36,27 @@
     row-gap: 20px;
   }
 
+  .tablet-wrap {
+    display: none;
+    @media (min-width: 768px) {
+      display: block;
+    }
+  }
+
+  .tablet-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 37px;
+  }
+
+  .links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 46px;
+  }
+
   .link {
     font-weight: 700;
     font-size: 15px;
@@ -39,6 +69,11 @@
     transition: all 0.3s;
     &:hover {
       color: rgba(0, 0, 0, 0.307);
+    }
+    @media (min-width: 768px) {
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: 2px;
     }
   }
 
@@ -65,5 +100,18 @@
       background-color: #dfdfdf;
       color: #000000;
     }
+    @media (min-width: 768px) {
+      padding-left: 21px;
+      padding-right: 21px;
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: 2px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    display: flex;
+    padding-left: 39px;
+    padding-right: 39px;
   }
 }

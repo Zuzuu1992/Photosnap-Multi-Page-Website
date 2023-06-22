@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { Header } from "../../components/Header/Header";
 import Girl from "../../../public/assets/pricing/mobile/hero.jpg";
 import "./PricingSt.scss";
 import { Card } from "../../components/Card/Card";
 import { Plan } from "../../components/Plan/Plan";
+import { Footer } from "../../components";
 
 interface HeaderProps {
   active: boolean;
@@ -11,6 +12,10 @@ interface HeaderProps {
 }
 
 export const Pricing = ({ active, handleActive }: HeaderProps) => {
+  const [checked, setChecked] = useState<boolean>(false);
+  const handleChecked = () => {
+    setChecked(!checked);
+  };
   return (
     <>
       {active && (
@@ -35,13 +40,39 @@ export const Pricing = ({ active, handleActive }: HeaderProps) => {
       </section>
       <section className="billing">
         <div className="time-switch-box">
-          <p className="month">Monthly</p>
-          <div className="rectangle">
-            <div className="circle"></div>
+          <p
+            className="month"
+            style={{
+              color: !checked ? "#000000" : "rgba(0, 0, 0, 0.5)",
+            }}
+          >
+            Monthly
+          </p>
+          <div
+            className="rectangle"
+            onClick={handleChecked}
+            style={{
+              backgroundColor: checked ? "#000000" : "#DFDFDF",
+            }}
+          >
+            <div
+              className="circle"
+              style={{
+                transform: checked ? "translateX(130%)" : "translateX(0%)",
+                backgroundColor: checked ? "#ffffff" : "#000000",
+              }}
+            ></div>
           </div>
-          <p className="year">Yearly</p>
+          <p
+            className="year"
+            style={{
+              color: checked ? "#000000" : "rgba(0, 0, 0, 0.5)",
+            }}
+          >
+            Yearly
+          </p>
         </div>
-        <Card />
+        <Card checked={checked} handleChecked={handleChecked} />
       </section>
       <section className="plan">
         <div className="title-box">
@@ -50,6 +81,21 @@ export const Pricing = ({ active, handleActive }: HeaderProps) => {
         </div>
         <Plan />
       </section>
+      <section className="beta">
+        <div className="stick"></div>
+        <h1 className="beta-name">We're in Beta. Get your invite today!</h1>
+        <div className="link-box">
+          <a className="direction" href="#">
+            Get an invite
+          </a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14">
+            <g fill="none" fillRule="evenodd" stroke="#FFFFFF">
+              <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+            </g>
+          </svg>
+        </div>
+      </section>
+      <Footer />
     </>
   );
 };

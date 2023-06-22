@@ -69,8 +69,15 @@
     text-align: center;
     letter-spacing: 2px;
     color: #ffffff;
+    border: none;
     text-transform: uppercase;
     width: 100%;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+      background-color: #dfdfdf;
+      color: #000000;
+    }
   }
 }
 

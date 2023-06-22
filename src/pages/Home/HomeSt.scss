@@ -2,8 +2,54 @@
   display: grid;
   grid-template-columns: 1fr;
 
+  .create-and-share {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @media (min-width: 768px) {
+      flex-direction: row;
+      align-items: stretch;
+    }
+  }
+
+  .beautiful-stories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @media (min-width: 768px) {
+      flex-direction: row;
+      align-items: stretch;
+    }
+  }
+
+  .designed-for {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @media (min-width: 768px) {
+      flex-direction: row;
+      align-items: stretch;
+    }
+  }
+
   .bridge-man {
     width: 100%;
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  .bridge-man-tab {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: block;
+      order: 2;
+      flex-grow: 1;
+    }
   }
 
   .create-box {
@@ -13,6 +59,10 @@
     background-color: #000000;
     padding: 72px 33px;
     position: relative;
+    @media (min-width: 768px) {
+      padding: 173px 54px;
+      row-gap: 21px;
+    }
   }
 
   .stick {
@@ -27,6 +77,12 @@
     position: absolute;
     top: 0;
     left: 8%;
+    @media (min-width: 768px) {
+      width: 1%;
+      height: 47%;
+      top: 27%;
+      left: 0;
+    }
   }
 
   .title {
@@ -36,6 +92,11 @@
     letter-spacing: 3.33333px;
     text-transform: uppercase;
     color: #ffffff;
+    @media (min-width: 768px) {
+      font-size: 40px;
+      line-height: 48px;
+      letter-spacing: 4.16667px;
+    }
   }
 
   .text {
@@ -52,6 +113,9 @@
     align-items: center;
     column-gap: 18px;
     padding-top: 7px;
+    @media (min-width: 768px) {
+      padding-top: 28px;
+    }
   }
 
   .direction {
@@ -70,6 +134,32 @@
   }
   .notebook {
     width: 100%;
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+  .notebook-tablet {
+    display: none;
+    @media (min-width: 768px) {
+      display: block;
+      flex-grow: 1;
+    }
+  }
+
+  .handsome {
+    width: 100%;
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  .handsome-tablet {
+    display: none;
+    @media (min-width: 768px) {
+      display: block;
+      order: 2;
+      flex-grow: 1;
+    }
   }
 }
 
@@ -83,7 +173,7 @@
   z-index: 1;
 }
 
-.gallery {
+.gallery_1 {
   display: grid;
   grid-template-columns: 1fr;
 
@@ -165,7 +255,7 @@
       url(/assets/home/mobile/walk.jpg);
   }
 
-  .architecture-photo-box {
+  .architecture-photo {
     background-image: linear-gradient(
         180deg,
         rgba(0, 0, 0, 0.0001) 0.27%,
@@ -173,20 +263,28 @@
       ),
       url(/assets/home/mobile/architecture.jpg);
   }
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .highlights {
   display: grid;
   grid-template-columns: 1fr;
+  row-gap: 80px;
+  padding-top: 80px;
   padding-bottom: 80px;
+
   .highlight {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 80px;
+    // padding-top: 80px;
     padding-left: 33px;
     padding-right: 33px;
+    @media (min-width: 768px) {
+    }
   }
   .responsive-title {
     font-weight: 700;
@@ -205,5 +303,8 @@
     mix-blend-mode: normal;
     opacity: 0.6;
     padding-top: 16px;
+  }
+  @media (min-width: 768px) {
+    padding: 120px 154px;
   }
 }

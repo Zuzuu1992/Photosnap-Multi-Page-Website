@@ -12,6 +12,10 @@ main {
     row-gap: 19px;
     padding-top: 50px;
     padding-bottom: 119px;
+    @media (min-width: 768px) {
+      flex-direction: row;
+      column-gap: 26px;
+    }
   }
 
   .page {
@@ -36,6 +40,13 @@ main {
     align-items: center;
     column-gap: 18px;
     padding-top: 7px;
+    @media (min-width: 768px) {
+      grid-column: 2;
+      grid-row: 1;
+    }
+    @media (min-width: 768px) {
+      justify-self: end;
+    }
   }
 
   .direction {
@@ -62,5 +73,15 @@ main {
     mix-blend-mode: normal;
     opacity: 0.5;
     padding-top: 34px;
+    @media (min-width: 768px) {
+      grid-row: 3;
+      justify-self: end;
+    }
+  }
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 35%);
+    justify-items: start;
+    padding: 64px 39px;
   }
 }

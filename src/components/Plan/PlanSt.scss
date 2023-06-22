@@ -18,12 +18,13 @@
   line-height: 16px;
   letter-spacing: 2px;
   color: #000000;
+  text-transform: uppercase;
 }
 .list-box {
   display: flex;
   align-items: center;
   column-gap: 70px;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
 }
 .tick-box {
@@ -48,9 +49,7 @@
   background-color: #dfdfdf;
   margin-top: 8px;
 }
-.basic {
-}
-.pro {
-}
-.business {
+
+.last {
+  margin-bottom: 52px;
 }

@@ -1,7 +1,13 @@
 import React from "react";
 import "./CardSt.scss";
+import { useState } from "react";
 
-export const Card = () => {
+interface PricingProps {
+  checked: boolean;
+  handleChecked: () => void;
+}
+
+export const Card = ({ checked, handleChecked }: PricingProps) => {
   return (
     <section className="cards-box">
       <div className="basic package">
@@ -13,8 +19,8 @@ export const Card = () => {
           </p>
         </div>
         <div className="price-box">
-          <h2 className="price"> $19.00</h2>
-          <p className="per">per month</p>
+          <h2 className="price">{!checked ? "$19.00" : "$190.00"}</h2>
+          <p className="per">{!checked ? "per month" : "per year"}</p>
         </div>
         <button className="pick-btn">Pick Plan</button>
       </div>
@@ -28,8 +34,8 @@ export const Card = () => {
           </p>
         </div>
         <div className="price-box">
-          <h2 className="price">$39.00</h2>
-          <p className="per">per month</p>
+          <h2 className="price">{!checked ? "$39.00" : "$390.00"}</h2>
+          <p className="per">{!checked ? "per month" : "per year"}</p>
         </div>
         <button className="pick-btn">Pick Plan</button>
       </div>
@@ -42,8 +48,8 @@ export const Card = () => {
           </p>
         </div>
         <div className="price-box">
-          <h2 className="price">$99.00</h2>
-          <p className="per">per month</p>
+          <h2 className="price">{!checked ? "$99.00" : "$990.00"}</h2>
+          <p className="per">{!checked ? "per month" : "per year"}</p>
         </div>
         <button className="pick-btn">Pick Plan</button>
       </div>

@@ -68,13 +68,17 @@
   }
 
   .direction {
-    font-weight: 700;
-    font-size: 12px;
+    font: {
+      weight: 700;
+      size: 12px;
+    }
     line-height: 16px;
     letter-spacing: 2px;
     color: #ffffff;
-    text-transform: uppercase;
-    text-decoration: none;
+    text: {
+      transform: uppercase;
+      decoration: none;
+    }
     cursor: pointer;
     transition: all 0.3s;
     &:hover {
@@ -88,8 +92,10 @@
   grid-template-columns: 1fr;
 
   .box {
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background: {
+      repeat: no-repeat;
+      size: 100% 100%;
+    }
     width: 100%;
     padding: 236px 33px 40px 33px;
     display: flex;

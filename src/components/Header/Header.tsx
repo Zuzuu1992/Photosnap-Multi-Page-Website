@@ -14,7 +14,24 @@ interface HeaderProps {
 export const Header = ({ active, handleActive }: HeaderProps) => {
   return (
     <div className="header">
-      <img src={Logo} alt="Logo" />
+      <img className="logo-mobile" src={Logo} alt="Logo" />
+      <div className="tablet-wrap">
+        <div className="tablet-nav">
+          <img src={Logo} alt="Logo" />
+          <div className="links">
+            <Link to="/stories" className="link">
+              Stories
+            </Link>
+            <Link to="/features" className="link">
+              Features
+            </Link>
+            <Link to="/pricing" className="link">
+              Pricing
+            </Link>
+          </div>
+          <button>Get an invite</button>
+        </div>
+      </div>
       <div onClick={handleActive} className="hamburger-box">
         {!active ? (
           <img src={Hamburger} alt="Hamburger" />
@@ -25,13 +42,13 @@ export const Header = ({ active, handleActive }: HeaderProps) => {
       {active && (
         <>
           <div className="menu-overlay">
-            <Link to="/stories" className="link">
+            <Link to="/stories" className="link" onClick={handleActive}>
               Stories
             </Link>
-            <Link to="/features" className="link">
+            <Link to="/features" className="link" onClick={handleActive}>
               Features
             </Link>
-            <Link to="/pricing" className="link">
+            <Link to="/pricing" className="link" onClick={handleActive}>
               Pricing
             </Link>
             <div className="line"></div>
