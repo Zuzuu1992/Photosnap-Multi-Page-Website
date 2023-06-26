@@ -17,6 +17,10 @@ main {
       column-gap: 26px;
       padding-bottom: 80px;
     }
+    @media (min-width: 1440px) {
+      flex-direction: column;
+      padding: 0;
+    }
   }
 
   .page {
@@ -34,6 +38,9 @@ main {
     &:hover {
       color: rgba(255, 255, 255, 0.304);
     }
+    @media (min-width: 1440px) {
+      text-align: start;
+    }
   }
 
   .link-box {
@@ -44,9 +51,10 @@ main {
     @media (min-width: 768px) {
       grid-column: 2;
       grid-row: 1;
-    }
-    @media (min-width: 768px) {
       justify-self: end;
+    }
+    @media (min-width: 1440px) {
+      grid-column: 3;
     }
   }
 
@@ -78,11 +86,23 @@ main {
       grid-row: 3;
       justify-self: end;
     }
+    @media (min-width: 1440px) {
+      grid-column: 3;
+      grid-row: 2;
+    }
   }
   @media (min-width: 768px) {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, 33%);
     justify-items: start;
     padding: 35px 39px;
+  }
+  @media (min-width: 1440px) {
+    grid-template-columns: 25% 1fr 1fr;
+    grid-template-rows: repeat(2, 40%);
+    justify-items: start;
+    align-items: start;
+    padding: 64px 171px;
+    padding-bottom: 20px;
   }
 }

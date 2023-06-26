@@ -13,6 +13,17 @@
       order: 2;
       flex-grow: 1;
     }
+    @media (min-width: 1440px) {
+      display: none;
+    }
+  }
+  .girl-img-desktop {
+    display: none;
+    @media (min-width: 1440px) {
+      display: block;
+      order: 2;
+      flex-grow: 1;
+    }
   }
 
   .create-box_2 {
@@ -22,10 +33,16 @@
     background-color: #000000;
     padding: 72px 33px;
     position: relative;
-    padding: 173px 39px;
-    row-gap: 21px;
+    @media (min-width: 768px) {
+      padding: 173px 39px;
+      row-gap: 21px;
+    }
+
+    @media (min-width: 1440px) {
+      padding: 173px 112px;
+    }
   }
-  .stick_2 {
+  .stick_4 {
     background: linear-gradient(
       26.57deg,
       #ffc593 0%,
@@ -42,6 +59,10 @@
       height: 25%;
       top: 32%;
       left: 0;
+    }
+    @media (min-width: 1440px) {
+      height: 30%;
+      top: 36%;
     }
   }
   .title_2 {
@@ -78,6 +99,10 @@
   row-gap: 43px;
   @media (min-width: 768px) {
     padding: 116px 39px;
+  }
+  @media (min-width: 1440px) {
+    padding: 128px 165px 150px 165px;
+    row-gap: 78px;
   }
 
   .time-switch-box {
@@ -155,8 +180,4 @@
       display: none;
     }
   }
-}
-
-.beta {
-  margin-top: 112px;
 }

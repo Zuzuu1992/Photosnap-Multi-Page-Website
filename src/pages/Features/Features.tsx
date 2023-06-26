@@ -3,6 +3,7 @@ import "./FeaturesSt.scss";
 import { Header } from "../../components/Header/Header";
 import Hero from "../../../public/assets/features/mobile/hero.jpg";
 import HeroTab from "../../../public/assets/features/tablet/hero.jpg";
+import HeroDesk from "../../../public/assets/features/desktop/hero.jpg";
 import { Feature } from "../../components/Feature/Feature";
 import Screens from "/assets/features/desktop/responsive.svg";
 import Limit from "/assets/features/desktop/no-limit.svg";
@@ -29,6 +30,11 @@ export const Features = ({ active, handleActive }: HeaderProps) => {
       <section className="intro_2">
         <img className="hero-img" src={Hero} alt="Man with camera" />
         <img className="hero-img-tablet" src={HeroTab} alt="Man with camera" />
+        <img
+          className="hero-img-desktop"
+          src={HeroDesk}
+          alt="Man with camera"
+        />
         <div className="create-box_1">
           <div className="stick"></div>
           <h1 className="title_1">Features</h1>
@@ -39,7 +45,7 @@ export const Features = ({ active, handleActive }: HeaderProps) => {
           </p>
         </div>
       </section>
-      <section className="highlights">
+      <section className="highlights_2">
         <Feature
           icon={Screens}
           title={"100% Responsive"}

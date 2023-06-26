@@ -8,10 +8,23 @@
       display: none;
     }
   }
+
   .hero-img-tablet {
     width: 100%;
     display: none;
     @media (min-width: 768px) {
+      display: block;
+      order: 2;
+      flex-grow: 1;
+    }
+    @media (min-width: 1440px) {
+      display: none;
+    }
+  }
+
+  .hero-img-desktop {
+    display: none;
+    @media (min-width: 1440px) {
       display: block;
       order: 2;
       flex-grow: 1;
@@ -28,6 +41,9 @@
     @media (min-width: 768px) {
       padding: 173px 39px;
       row-gap: 21px;
+    }
+    @media (min-width: 1440px) {
+      padding: 173px 112px;
     }
   }
 
@@ -48,6 +64,10 @@
       height: 25%;
       top: 34%;
       left: 0;
+    }
+    @media (min-width: 1440px) {
+      height: 31%;
+      top: 36%;
     }
   }
 
@@ -100,17 +120,29 @@
   background-size: 100% 100%;
   width: 100%;
   padding: 64px 33px 64px 33px;
+
   display: flex;
   flex-direction: column;
   row-gap: 24px;
   position: relative;
   @media (min-width: 768px) {
+    margin-top: 112px;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     font-size: 40px;
     line-height: 48px;
     letter-spacing: 4.16667px;
+  }
+  @media (min-width: 1440px) {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.0001) 0.27%,
+        rgba(0, 0, 0, 0.661222) 100%
+      ),
+      url(/assets/shared/desktop/bg-beta.jpg);
+    margin-top: 160px;
+    padding: 68px 165px 68px 165px;
   }
 
   .beta-name {
@@ -125,6 +157,9 @@
       font-size: 40px;
       line-height: 48px;
       letter-spacing: 4.16667px;
+    }
+    @media (min-width: 1440px) {
+      width: 37%;
     }
   }
 
@@ -172,9 +207,48 @@
     }
   }
 }
-.highlights {
+.highlights_2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 80px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   @media (min-width: 768px) {
     grid-template-columns: 1fr 1fr;
-    padding: 112px 10px 112px 10px;
+    padding: 120px 10px 0px 10px;
+  }
+  @media (min-width: 1440px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 160px 165px 0px 165px;
+  }
+
+  .highlight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // padding-top: 80px;
+    padding-left: 33px;
+    padding-right: 33px;
+    @media (min-width: 768px) {
+    }
+  }
+  .responsive-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #000000;
+    padding-top: 48px;
+  }
+  .responsive-text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+    padding-top: 16px;
   }
 }

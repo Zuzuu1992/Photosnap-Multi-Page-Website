@@ -4,6 +4,7 @@ import { Header } from "../../components/Header/Header";
 import "./StoriesSt.scss";
 import Wood from "/assets/stories/mobile/moon-of-appalacia.jpg";
 import WoodTab from "/assets/stories/tablet/moon-of-appalacia.jpg";
+import WoodDesk from "/assets/stories/desktop/moon-of-appalacia.jpg";
 import { Footer } from "../../components/Footer/Footer";
 
 interface HeaderProps {
@@ -26,6 +27,11 @@ export const Stories = ({ active, handleActive }: HeaderProps) => {
           <img
             className="wood-img-tablet"
             src={WoodTab}
+            alt="Foogy mountains"
+          />
+          <img
+            className="wood-img-desktop"
+            src={WoodDesk}
             alt="Foogy mountains"
           />
         </div>

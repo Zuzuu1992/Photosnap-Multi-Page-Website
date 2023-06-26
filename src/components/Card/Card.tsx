@@ -24,7 +24,7 @@ export const Card = ({ checked, handleChecked }: PricingProps) => {
         </div>
         <button className="pick-btn">Pick Plan</button>
       </div>
-      <div className="pro package">
+      <div className="package pro">
         <div className="stick"></div>
         <div className="text-box">
           <h1 className="type">Pro</h1>
@@ -39,7 +39,7 @@ export const Card = ({ checked, handleChecked }: PricingProps) => {
         </div>
         <button className="pick-btn">Pick Plan</button>
       </div>
-      <div className="basic package">
+      <div className="business package">
         <div className="text-box">
           <h1 className="type">Business</h1>
           <p className="include">

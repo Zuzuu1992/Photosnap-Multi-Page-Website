@@ -2,6 +2,10 @@
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 24px;
+  @media (min-width: 1440px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+  }
 }
 
 .package {
@@ -20,6 +24,15 @@
     row-gap: 32px;
     padding: 40px;
   }
+  @media (min-width: 1440px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 56px 40px;
+    row-gap: 40px;
+    width: 100%;
+  }
 
   .text-box {
     display: flex;
@@ -30,6 +43,9 @@
     @media (min-width: 768px) {
       align-items: flex-start;
     }
+    @media (min-width: 1440px) {
+      align-items: center;
+    }
   }
   .price-box {
     display: flex;
@@ -39,6 +55,9 @@
     @media (min-width: 768px) {
       align-items: flex-end;
     }
+    @media (min-width: 1440px) {
+      align-items: center;
+    }
   }
 
   .type {
@@ -47,6 +66,9 @@
     line-height: 25px;
     color: #000000;
     text-transform: none;
+    @media (min-width: 768px) {
+      display: block;
+    }
   }
   .include {
     font-weight: 400;
@@ -57,6 +79,9 @@
     text-align: center;
     @media (min-width: 768px) {
       text-align: left;
+    }
+    @media (min-width: 1440px) {
+      text-align: center;
     }
   }
   .price {
@@ -133,5 +158,11 @@
     position: absolute;
     top: 0;
     left: 0;
+  }
+}
+
+.pro {
+  @media (min-width: 1440px) {
+    transform: scaleY(1.13);
   }
 }

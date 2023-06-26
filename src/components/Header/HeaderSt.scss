@@ -37,6 +37,7 @@
   }
 
   .tablet-wrap {
+    width: 100%;
     display: none;
     @media (min-width: 768px) {
       display: block;
@@ -48,6 +49,9 @@
     align-items: center;
     justify-content: center;
     column-gap: 37px;
+    @media (min-width: 1440px) {
+      justify-content: space-between;
+    }
   }
 
   .links {
@@ -101,6 +105,7 @@
       color: #000000;
     }
     @media (min-width: 768px) {
+      width: auto;
       padding-left: 21px;
       padding-right: 21px;
       font-size: 12px;
@@ -113,5 +118,9 @@
     display: flex;
     padding-left: 39px;
     padding-right: 39px;
+  }
+  @media (min-width: 1440px) {
+    padding-left: 165px;
+    padding-right: 165px;
   }
 }

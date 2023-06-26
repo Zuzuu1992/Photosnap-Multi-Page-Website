@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Header } from "../../components/Header/Header";
 import Girl from "../../../public/assets/pricing/mobile/hero.jpg";
 import GirlTab from "../../../public/assets/pricing/tablet/hero.jpg";
+import GirlDesk from "../../../public/assets/pricing/desktop/hero.jpg";
 import "./PricingSt.scss";
 import { Card } from "../../components/Card/Card";
 import { Plan } from "../../components/Plan/Plan";
@@ -27,10 +28,15 @@ export const Pricing = ({ active, handleActive }: HeaderProps) => {
       <Header active={active} handleActive={handleActive} />
       <section className="intro">
         <img className="girl-img" src={Girl} alt="Man with camera" />
-        <img className="girl-img-tablet" src={GirlTab} alt="Man with camera" />
+        <img className="girl-img-tablet" src={GirlTab} alt="Girl with camera" />
+        <img
+          className="girl-img-desktop"
+          src={GirlDesk}
+          alt="Girl with camera"
+        />
 
         <div className="create-box_2">
-          <div className="stick_2"></div>
+          <div className="stick_4"></div>
           <h1 className="title_2">Pricing</h1>
           <p className="text_2">
             Create a your stories, Photosnap is a platform for photographers and

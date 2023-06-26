@@ -16,4 +16,8 @@
     grid-column: 1;
     grid-row: 3;
   }
+  @media (min-width: 1440px) {
+    grid-column: 1;
+    grid-row: 2;
+  }
 }

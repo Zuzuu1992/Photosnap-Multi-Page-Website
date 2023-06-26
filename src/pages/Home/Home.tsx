@@ -3,10 +3,13 @@ import { Header } from "../../components/Header/Header";
 import { Footer } from "../../components/Footer/Footer";
 import Bridge from "/assets/home/mobile/create-and-share.jpg";
 import BridgeTab from "/assets/home/tablet/create-and-share.jpg";
+import BridgeDesk from "/assets/home/desktop/create-and-share.jpg";
 import Handsome from "/assets/home/mobile/designed-for-everyone.jpg";
 import HandsomeTab from "/assets/home/tablet/designed-for-everyone.jpg";
+import HandsomeDesk from "/assets/home/desktop/designed-for-everyone.jpg";
 import Notebook from "/assets/home/mobile/beautiful-stories.jpg";
 import NotebookTab from "/assets/home/tablet/beautiful-stories.jpg";
+import NotebookDesk from "/assets/home/desktop/beautiful-stories.jpg";
 import Screens from "/assets/features/desktop/responsive.svg";
 import Limit from "/assets/features/desktop/no-limit.svg";
 import Embed from "/assets/features/desktop/embed.svg";
@@ -33,12 +36,17 @@ export const Home = ({ active, handleActive }: HeaderProps) => {
           <img
             src={Bridge}
             className="bridge-man"
-            alt="Man standing on the birdge"
+            alt="Man standing on the bridge"
           />
           <img
             src={BridgeTab}
             className="bridge-man-tab"
-            alt="Man standing on the birdge"
+            alt="Man standing on the bridge"
+          />
+          <img
+            src={BridgeDesk}
+            className="bridge-man-desk"
+            alt="Man standing on the bridge"
           />
           <div className="create-box">
             <div className="stick"></div>
@@ -71,7 +79,15 @@ export const Home = ({ active, handleActive }: HeaderProps) => {
             className="notebook-tablet"
             alt="Notebook on the table"
           />
-          <div className="create-box" style={{ backgroundColor: "#ffffff" }}>
+          <img
+            src={NotebookDesk}
+            className="notebook-desktop"
+            alt="Notebook on the table"
+          />
+          <div
+            className="create-box beautiful-box"
+            style={{ backgroundColor: "#ffffff" }}
+          >
             <h1 className="title" style={{ color: "#000000" }}>
               Beautiful stories every time
             </h1>
@@ -99,7 +115,15 @@ export const Home = ({ active, handleActive }: HeaderProps) => {
             className="handsome-tablet"
             alt="Man with camera"
           />
-          <div className="create-box" style={{ backgroundColor: "#ffffff" }}>
+          <img
+            src={HandsomeDesk}
+            className="handsome-desktop"
+            alt="Man with camera"
+          />
+          <div
+            className="create-box designed-box"
+            style={{ backgroundColor: "#ffffff" }}
+          >
             <h1 className="title" style={{ color: "#000000" }}>
               Designed for everyone
             </h1>
