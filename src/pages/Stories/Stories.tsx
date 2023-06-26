@@ -3,6 +3,7 @@ import React from "react";
 import { Header } from "../../components/Header/Header";
 import "./StoriesSt.scss";
 import Wood from "/assets/stories/mobile/moon-of-appalacia.jpg";
+import WoodTab from "/assets/stories/tablet/moon-of-appalacia.jpg";
 import { Footer } from "../../components/Footer/Footer";
 
 interface HeaderProps {
@@ -21,7 +22,12 @@ export const Stories = ({ active, handleActive }: HeaderProps) => {
       <Header active={active} handleActive={handleActive} />
       <section className="intro">
         <div className="hero-img-box">
-          <img src={Wood} alt="Foogy mountains" />
+          <img className="wood-img" src={Wood} alt="Foogy mountains" />
+          <img
+            className="wood-img-tablet"
+            src={WoodTab}
+            alt="Foogy mountains"
+          />
         </div>
         <div className="create-box">
           <h2 className="featured-story"> Last month's featured story</h2>

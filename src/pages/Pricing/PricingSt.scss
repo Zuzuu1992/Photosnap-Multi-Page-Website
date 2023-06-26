@@ -1,8 +1,85 @@
+.intro {
+  .girl-img {
+    width: 100%;
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+  .girl-img-tablet {
+    width: 100%;
+    display: none;
+    @media (min-width: 768px) {
+      display: block;
+      order: 2;
+      flex-grow: 1;
+    }
+  }
+
+  .create-box_2 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    background-color: #000000;
+    padding: 72px 33px;
+    position: relative;
+    padding: 173px 39px;
+    row-gap: 21px;
+  }
+  .stick_2 {
+    background: linear-gradient(
+      26.57deg,
+      #ffc593 0%,
+      #bc7198 43.29%,
+      #5a77ff 83.33%
+    );
+    width: 37%;
+    height: 6px;
+    position: absolute;
+    top: 0;
+    left: 8%;
+    @media (min-width: 768px) {
+      width: 1%;
+      height: 25%;
+      top: 32%;
+      left: 0;
+    }
+  }
+  .title_2 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 3.33333px;
+    text-transform: uppercase;
+    color: #ffffff;
+    @media (min-width: 768px) {
+      font-size: 40px;
+      line-height: 48px;
+      letter-spacing: 4.16667px;
+    }
+  }
+  .text_2 {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+  }
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: stretch;
+  }
+}
+
 .billing {
   display: grid;
   grid-template-columns: 1fr;
   padding: 64px 29px;
   row-gap: 43px;
+  @media (min-width: 768px) {
+    padding: 116px 39px;
+  }
+
   .time-switch-box {
     display: flex;
     align-items: center;
@@ -50,31 +127,36 @@
   display: grid;
   grid-template-columns: 1fr;
   padding: 0px 29px;
-  // row-gap: 23px;
 
-  .title-box {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    row-gap: 23px;
+  .mobile-head {
+    @media (min-width: 768px) {
+      display: none !important;
+    }
   }
-
-  .name {
+  .name-mobile {
     font-weight: 700;
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 2px;
     color: #000000;
     text-transform: uppercase;
+    // row-gap: 43px;
+    @media (min-width: 768px) {
+      display: none !important;
+    }
   }
 
-  .line {
+  .line_1 {
     height: 1px;
     width: 100%;
     background-color: #000000;
+    margin-top: 16px;
+    @media (min-width: 768px) {
+      display: none;
+    }
   }
 }
 
 .beta {
-  margin-bottom: -1px;
+  margin-top: 112px;
 }

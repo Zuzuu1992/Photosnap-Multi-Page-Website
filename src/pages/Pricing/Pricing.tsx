@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Header } from "../../components/Header/Header";
 import Girl from "../../../public/assets/pricing/mobile/hero.jpg";
+import GirlTab from "../../../public/assets/pricing/tablet/hero.jpg";
 import "./PricingSt.scss";
 import { Card } from "../../components/Card/Card";
 import { Plan } from "../../components/Plan/Plan";
@@ -25,13 +26,13 @@ export const Pricing = ({ active, handleActive }: HeaderProps) => {
       )}
       <Header active={active} handleActive={handleActive} />
       <section className="intro">
-        <div className="hero-img-box">
-          <img src={Girl} alt="Man with camera" />
-        </div>
-        <div className="create-box_1">
-          <div className="stick"></div>
-          <h1 className="title_1">Pricing</h1>
-          <p className="text_1">
+        <img className="girl-img" src={Girl} alt="Man with camera" />
+        <img className="girl-img-tablet" src={GirlTab} alt="Man with camera" />
+
+        <div className="create-box_2">
+          <div className="stick_2"></div>
+          <h1 className="title_2">Pricing</h1>
+          <p className="text_2">
             Create a your stories, Photosnap is a platform for photographers and
             visual storytellers. It’s the simple way to create and share your
             photos.
@@ -74,13 +75,15 @@ export const Pricing = ({ active, handleActive }: HeaderProps) => {
         </div>
         <Card checked={checked} handleChecked={handleChecked} />
       </section>
+
       <section className="plan">
-        <div className="title-box">
-          <h1 className="name">The Features</h1>
-          <div className="line"></div>
+        <div className="mobile-head">
+          <h1 className="name-mobile">The Features</h1>
+          <div className="line_1"></div>
         </div>
         <Plan />
       </section>
+
       <section className="beta">
         <div className="stick"></div>
         <h1 className="beta-name">We're in Beta. Get your invite today!</h1>

@@ -1,9 +1,21 @@
-.intro {
+.intro_2 {
   display: grid;
   grid-template-columns: 1fr;
 
-  .hero-img-box img {
+  .hero-img {
     width: 100%;
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+  .hero-img-tablet {
+    width: 100%;
+    display: none;
+    @media (min-width: 768px) {
+      display: block;
+      order: 2;
+      flex-grow: 1;
+    }
   }
 
   .create-box_1 {
@@ -13,6 +25,10 @@
     background-color: #000000;
     padding: 72px 33px;
     position: relative;
+    @media (min-width: 768px) {
+      padding: 173px 39px;
+      row-gap: 21px;
+    }
   }
 
   .stick {
@@ -27,6 +43,12 @@
     position: absolute;
     top: 0;
     left: 8%;
+    @media (min-width: 768px) {
+      width: 1%;
+      height: 25%;
+      top: 34%;
+      left: 0;
+    }
   }
 
   .title_1 {
@@ -36,6 +58,11 @@
     letter-spacing: 3.33333px;
     text-transform: uppercase;
     color: #ffffff;
+    @media (min-width: 768px) {
+      font-size: 40px;
+      line-height: 48px;
+      letter-spacing: 4.16667px;
+    }
   }
 
   .text_1 {
@@ -45,6 +72,10 @@
     color: #ffffff;
     mix-blend-mode: normal;
     opacity: 0.6;
+  }
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: stretch;
   }
 }
 
@@ -73,6 +104,14 @@
   flex-direction: column;
   row-gap: 24px;
   position: relative;
+  @media (min-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 4.16667px;
+  }
 
   .beta-name {
     font-weight: 700;
@@ -81,6 +120,12 @@
     letter-spacing: 3.33333px;
     text-transform: uppercase;
     color: #ffffff;
+    @media (min-width: 768px) {
+      width: 56%;
+      font-size: 40px;
+      line-height: 48px;
+      letter-spacing: 4.16667px;
+    }
   }
 
   .link-box {
@@ -88,6 +133,9 @@
     align-items: center;
     column-gap: 18px;
     padding-top: 7px;
+    // @media (min-width: 768px) {
+    //   width: 34%;
+    // }
   }
 
   .direction {
@@ -116,5 +164,17 @@
     position: absolute;
     top: 0;
     left: 8%;
+    @media (min-width: 768px) {
+      width: 0.5%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+.highlights {
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+    padding: 112px 10px 112px 10px;
   }
 }
