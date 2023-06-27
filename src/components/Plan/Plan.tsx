@@ -1,4 +1,4 @@
-import React from "react";
+
 import "./PlanSt.scss";
 import Check from "/assets/pricing/desktop/check.svg";
 

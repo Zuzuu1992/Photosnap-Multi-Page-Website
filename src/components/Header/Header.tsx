@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import "./HeaderSt.scss";
 import Logo from "/assets/shared/desktop/logo.svg";

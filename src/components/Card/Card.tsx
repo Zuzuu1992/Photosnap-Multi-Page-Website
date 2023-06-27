@@ -1,4 +1,3 @@
-import React from "react";
 import "./CardSt.scss";
 
 interface PricingProps {
@@ -6,7 +5,7 @@ interface PricingProps {
   handleChecked: () => void;
 }
 
-export const Card = ({ checked, handleChecked }: PricingProps) => {
+export const Card = ({ checked }: PricingProps) => {
   return (
     <section className="cards-box">
       <div className="basic package">
