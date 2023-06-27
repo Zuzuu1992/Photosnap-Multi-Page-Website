@@ -1,6 +1,5 @@
 import React from "react";
 import "./CardSt.scss";
-import { useState } from "react";
 
 interface PricingProps {
   checked: boolean;

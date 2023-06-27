@@ -9,6 +9,8 @@
     width: 100%;
     display: none;
     @media (min-width: 768px) {
+      height: 560px;
+      width: 50%;
       display: block;
       order: 2;
       flex-grow: 1;
@@ -165,7 +167,6 @@
     letter-spacing: 2px;
     color: #000000;
     text-transform: uppercase;
-    // row-gap: 43px;
     @media (min-width: 768px) {
       display: none !important;
     }

@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { useState } from "react";
 import "./HeaderSt.scss";
 import Logo from "/assets/shared/desktop/logo.svg";
 import Hamburger from "/assets/shared/mobile/menu.svg";
