@@ -1,8 +1,8 @@
-import React from "react";
 import { Link } from "react-router-dom";
+import React from "react";
 import "./FooterSt.scss";
 import Logo from "/assets/shared/desktop/logo-white.svg";
-import { Social } from "./social";
+import { Social } from "./Social";
 
 export const Footer = () => {
   return (
