@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import React from "react";
 import "./FooterSt.scss";
 import Logo from "/assets/shared/desktop/logo-white.svg";
 import { Social } from "./Social";
